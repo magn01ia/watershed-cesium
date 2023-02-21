@@ -1,5 +1,13 @@
     const viewer = new Cesium.Viewer('cesiumContainer', {
       terrainProvider: Cesium.createWorldTerrain(),
+      animation: false,
+      baseLayerPicker: false,
+      fullscreenButton: true,
+      geocoder: false,
+      homeButton: false,
+      navigationHelpButton: false,
+      sceneModePicker: false,
+      timeline: false,
     });    
 
     Cesium.GeoJsonDataSource.clampToGround = true;
